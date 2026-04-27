@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "1f3997168a7b77fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "32f32511a930fa59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a328dc5cfd7d2e5d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e380e7ed4bf076eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "2308a93ef1f9aab9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa8e2b3f22af4e24",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "e9605435ca82f9a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "a471b45fa88caae1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "20123001bca0659e",
+    "type": "split",
+    "children": [
+      {
+        "id": "41ba263750f78a7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb3a2f28b3def9e2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "ca55fcffc0a64565",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "d0b1b4eec4b1bf02",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4704b2d2c4d671a4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "dc8ec6a9b3f7ba83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "12fe5c01b4dc0571",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "脚注"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "a328dc5cfd7d2e5d",
+  "lastOpenFiles": [
+    "未命名.canvas",
+    "03-Resource/02-Languages/Rust.md",
+    "03-Resource/03-Architecture/后端架构.md",
+    "03-Resource/06-Agent/SKILL 设计指南.md",
+    "AGENTS.md",
+    "02-Area",
+    "03-Resource/06-Agent/Skill 设计.md",
+    "02-Area/DevOps/运维最佳实践.md",
+    "02-Area/DevOps/Kubernetes (K8s) 最佳实践.md",
+    "02-Area/DevOps/etcd 最佳实践.md",
+    "02-Area/架构设计/SQL 最佳实践.md",
+    "02-Area/DevOps",
+    "02-Area/未命名.md",
+    "02-Area/架构设计/Redis 最佳实践.md",
+    "02-Area/架构设计/数据库设计最佳实践.md",
+    "02-Area/架构设计/后端架构设计最佳实践.md",
+    "02-Area/软件开发方法论",
+    "02-Area/软件开发方法论/测试驱动开发 (TDD) 最佳实践.md",
+    "02-Area/软件开发方法论/行为驱动开发 (BDD) 最佳实践.md",
+    "02-Area/软件开发方法论/领域驱动设计 (DDD) 最佳实践.md",
+    "02-Area/agent/Skill 的最佳实践.md",
+    "02-Area/架构设计",
+    "03-Resource/agent/【SKILL 设计的最佳实践】什么是SKILL？怎么快速写一个优秀的SKILL？.md",
+    "What‘s SKILL.md",
+    "02-Area/agent",
+    "03-Resource/agent",
+    "guanhuhao.md",
+    "欢迎.md",
+    "04-Archive",
+    "03-Resource",
+    "02-Area",
+    "01-Project"
+  ]
+}
