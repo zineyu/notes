@@ -1,0 +1,51 @@
+{
+    "schemaVersion": "0.1.0",
+    "name": "Inbox - Source",
+    "behavior": "create",
+    "noteContentFormat": "## 来源\n- URL：{{url}}\n- 作者：{{author|default:\"\"}}\n\n## 摘要\n{{description|default:\"\"}}\n\n## 核心内容\n\n{{content}}\n",
+    "properties": [
+        {
+            "name": "type",
+            "value": "source",
+            "type": "text"
+        },
+        {
+            "name": "title",
+            "value": "{{title}}",
+            "type": "text"
+        },
+        {
+            "name": "source-url",
+            "value": "{{url}}",
+            "type": "text"
+        },
+        {
+            "name": "author",
+            "value": "{{author|split:\", \"|wikilink|join}}",
+            "type": "multitext"
+        },
+        {
+            "name": "published",
+            "value": "{{published}}",
+            "type": "date"
+        },
+        {
+            "name": "created",
+            "value": "{{date}}",
+            "type": "date"
+        },
+        {
+            "name": "description",
+            "value": "{{description}}",
+            "type": "text"
+        },
+        {
+            "name": "tags",
+            "value": "clippings",
+            "type": "multitext"
+        }
+    ],
+    "triggers": [],
+    "noteNameFormat": "{{title}}",
+    "path": "00-Inbox"
+}
