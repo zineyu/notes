@@ -47,5 +47,5 @@
     ],
     "triggers": [],
     "noteNameFormat": "{{title}}",
-    "path": "00-Inbox"
+    "path": "raw"
 }

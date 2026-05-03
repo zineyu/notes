@@ -3,7 +3,7 @@ type: garden
 topic: Agent
 created: 2026-05-03
 updated: 2026-05-03
-sources: ["10-Sources/Articles/我是怎么用Codex嗨大了的？.md"]
+sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md"]
 ---
 
 # AI 编码工作流
@@ -47,15 +47,15 @@ sources: ["10-Sources/Articles/我是怎么用Codex嗨大了的？.md"]
 
 ## 工具栈
 
-| 工具 | 类型 | 用途 |
-|------|------|------|
-| Trellis | harness | 项目开发全流程编排 |
-| codex-autoresearch | skill | 长期任务自动运行 |
-| sequential-thinking | MCP | 复杂推理 |
-| memory | MCP | 记忆管理 |
-| serena | MCP | 代码库理解 |
-| playwright | MCP | 浏览器操作 |
-| Grok-Search | MCP | 搜索 |
+| 工具                  | 类型      | 用途        |
+| ------------------- | ------- | --------- |
+| Trellis             | harness | 项目开发全流程编排 |
+| codex-autoresearch  | skill   | 长期任务自动运行  |
+| sequential-thinking | MCP     | 复杂推理      |
+| memory              | MCP     | 记忆管理      |
+| serena              | MCP     | 代码库理解     |
+| playwright          | MCP     | 浏览器操作     |
+| Grok-Search         | MCP     | 搜索        |
 
 ## 核心理念
 > "AI + coding 无非就是将 AI 的开发流程接入传统 coding 的开发规范中，这是唯一正确的发展规律。"
@@ -67,4 +67,4 @@ sources: ["10-Sources/Articles/我是怎么用Codex嗨大了的？.md"]
 - [[Skill 设计]] — Agent Skill 设计方法论
 
 ## 演化记录
-- [2026-05-03] 从 [[10-Sources/Articles/我是怎么用Codex嗨大了的？.md]] 提取
+- [2026-05-03] 从 [[raw/Articles/我是怎么用Codex嗨大了的？.md]] 提取

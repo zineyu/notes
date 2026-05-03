@@ -1,5 +1,14 @@
 # 操作日志
 
+> LLM Wiki 按时间顺序的操作记录。每行以固定前缀开头，可用 `grep` 解析。
+
+## [2026-05-10] migrate | LLM Wiki 架构重构
+- 目录重构：`10-Sources/` → `raw/`，`40-Garden/` → `wiki/`
+- 模板移至 `Templates/`（根目录），便于访问
+- 全局索引和日志移至 `wiki/index.md` 和 `wiki/log.md`（由 LLM 维护）
+- AGENTS.md 重写为 LLM Wiki 模式（ingest / query / lint）
+- 移除 PARA 空目录（00-Inbox, 20-Project, 30-Area, 50-Archive, 90-Meta）
+
 ## [2026-05-03] process-inbox | 1 份
 - source: 我是怎么用Codex嗨大了的？ → 创建 [[Agent/AI 编码工作流]]、[[Agent/需求驱动开发]]，更新 [[Agent/Skill 设计]]、[[Agent/index]]
 
@@ -13,7 +22,5 @@
 - 6 个 Garden 子目录：Frontend, Languages, Architecture, DevOps, Methodologies, Agent
 
 ## [2026-05-03] refactor v2 | 知识系统与行动系统分离
-- → 已被 v3 取代
 
 ## [2026-05-03] init | 初始架构
-- → 已被 v2 取代

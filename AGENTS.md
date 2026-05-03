@@ -1,268 +1,146 @@
-# 知识库维护者模式
+# LLM Wiki
 
-> **角色**：你是本知识库的维基维护者。用户通过 Obsidian 模板或 Web Clipper 向 `00-Inbox/` 投放笔记，你负责分类、归档、提取知识、建立链接、提交。用户只写，你负责组织。
+> **角色**：你是本知识库的 Wiki 维护者。你增量构建和维护一个结构化、互联的 Markdown 知识库。用户负责策展资源和提出问题；你负责所有的总结、交叉引用、归档和簿记工作。
 
----
+## 架构
 
-## 用户工作流（你不需要执行，仅供参考）
-
-```
-┌─────────────────┐
-│ Obsidian 手动   │ → Cmd+T 选模板 → 新建笔记到 00-Inbox/
-│ Web Clipper     │ → 一键剪藏     → 自动保存到 00-Inbox/
-└────────┬────────┘
-         ↓
-   你："处理 Inbox"
-         ↓
-   LLM 自动处理 → 归档 → 提取知识 → 提交
-         ↓
-    Inbox 清空 ✓
-```
-
-Obsidian 核心模板位于 `90-Meta/_Templates/`：
-
-| 模板 | type | 用途 |
-|------|------|------|
-| `Inbox - capture` | capture | 通用笔记 |
-| `Inbox - source` | source | 外部资料（文章/论文/视频） |
-| `Inbox - project-note` | project-note | 项目会议记录、决策 |
-| `Inbox - idea` | idea | 灵感、假设 |
-
-Web Clipper 模板：`90-Meta/_Templates/WebClipper - Inbox Source.json`。导入到浏览器 Obsidian Web Clipper 扩展后，一键剪藏网页到 `00-Inbox/`，自动生成 `type: source`。
-
----
-
-## 触发：处理 Inbox
-
-用户说 **"处理 Inbox"**（或 "处理inbox"、"process inbox"）时执行。
-
-### Step 1: 检测变更
-
-```bash
-jj status
-```
-
-只看 `00-Inbox/` 下的 `.md` 文件。忽略 `.obsidian/`、`90-Meta/`、`assets/` 等系统文件的变更。
-
-如果 Inbox 为空，告知用户且不做任何其他操作。
-
-### Step 2: 逐份处理
-
-对每份笔记读内容、判类型、执行对应流程：
-
----
-
-#### `type: capture` — 通用捕获
-
-内容可能是知识点、随手记、备忘。你需要**判断**它属于哪：
-
-1. **知识类**（技术点、概念解释、经验总结）
-   - 找到 `40-Garden/` 中匹配的主题子目录
-   - 新建页面或更新已有页面（追加到合适段落）
-   - 更新该主题的 `index.md`
-2. **项目类**（与某个 Project 相关）
-   - 归档到 `20-Project/{project}/notes.md`，按日期追加
-   - 若含可泛化知识，同步到 Garden
-3. **临时备忘**（纯提醒，无长期价值）
-   - 直接删除，在汇报中提一句即可
-
----
-
-#### `type: source` — 外部资料
-
-1. 读内容，提取标题、作者、URL、核心论点
-2. 将原始笔记**移动**到 `10-Sources/` 对应子目录：
-   - 文章/博客 → `Articles/`
-   - 学术论文 → `Papers/`
-   - 书籍章节 → `Books/`
-   - 播客/访谈 → `Podcasts/`
-   - 其他 → `Misc/`
-3. 在 `40-Garden/` 中创建或更新知识页面：
-   - 对每个核心概念/实体，找到匹配的 Garden 主题
-   - 在页面中标注来源：`sources: ["10-Sources/Articles/文件名.md"]`
-   - 不同来源有不同视角时，标注 `⚠️ 矛盾` 或对比
-4. 更新 Garden 主题的 `index.md`
-5. 从 Inbox 删除原文件
-
-注意：`10-Sources/` 中的文件只保留原文，LLM 之后不会再次处理它。知识提取在 Step 3 一次性完成。
-
----
-
-#### `type: project-note` — 项目笔记
-
-1. 确认 `topic` 字段指向的 Project 存在。若不存在，在 `20-Project/` 下创建：
-   ```
-   20-Project/{topic}/
-   └── notes.md
-   ```
-2. 将笔记追加到 `notes.md`，格式：
-   ```markdown
-   ### [YYYY-MM-DD] {标题}
-   正文...
-   ```
-3. 检查是否有可泛化的技术/方法论知识 → 提取到 Garden
-4. 从 Inbox 删除原文件
-
----
-
-#### `type: idea` — 灵感
-
-1. 找到最相关的已有 Garden 页面，追加 `## 待深入` 段落
-2. 若无相关页面，在合适的 Garden 主题下创建新页面，标注 `status: draft`
-3. 更新 Garden 主题的 `index.md`
-4. 从 Inbox 删除原文件
-
----
-
-### Step 3: 更新系统文件
-
-- `90-Meta/index.md`：新增页面或主题时更新
-- `90-Meta/log.md`：追加处理记录：
-  ```markdown
-  ## [YYYY-MM-DD HH:MM] process-inbox | {N} 份
-  - capture: {标题} → Garden/{topic}/{page}
-  - source: {标题} → 10-Sources/ + Garden/{topic}/
-  - project-note: {标题} → 20-Project/{name}/
-  ```
-
-### Step 4: 提交
-
-```bash
-jj commit -m "inbox: {摘要，如 'capture: Rust async Drop → Garden/Languages'}"
-```
-
-一条 commit 包含本次所有变更，便于追溯。
-
-### Step 5: 汇报
-
-简要列出：
-- 处理了几份、每份去向
-- 新建/更新了哪些页面
-- 需用户决策的事项（矛盾、不确定信息、新主题建议）
-
----
-
-## 目录架构
+三层结构：
 
 ```
 notes/
-├── 00-Inbox/                  # 📥 唯一入口（用户投放，LLM 处理并清空）
-├── 10-Sources/                # 📄 原始资料（LLM 只读）
-│   ├── Articles/ Papers/ Books/ Podcasts/ Misc/
-├── 20-Project/                # 🎯 活跃项目（LLM 协助归档）
-│   └── {project}/notes.md
-├── 30-Area/                   # 🔄 持续责任区（LLM 协助）
-├── 40-Garden/                 # 🌱 数字花园（LLM 全权维护）
-│   └── {topic}/
-│       ├── index.md           #   主题入口
-│       └── {page}.md          #   知识页面
-├── 50-Archive/                # 📦 已完成/暂停
-├── 90-Meta/                   # ⚙️ 系统文件
-│   ├── index.md               #   全局索引
-│   ├── log.md                 #   操作日志
-│   └── _Templates/            #   Obsidian 模板（不动）
-└── AGENTS.md                  # 📋 本文件
+├── raw/                  # 原始资料（不可变，LLM 只读）
+│   ├── Articles/         #   文章/博客
+│   ├── Papers/           #   学术论文
+│   ├── Books/            #   书籍章节
+│   ├── Podcasts/         #   播客/访谈
+│   └── Misc/             #   其他
+├── wiki/                 # LLM 生成和维护的知识库
+│   ├── index.md          #   全局内容目录
+│   ├── log.md            #   按时间顺序的操作日志
+│   └── {topic}/          #   主题子目录
+│       ├── index.md      #     主题入口页
+│       └── {page}.md     #     知识页面
+├── AGENTS.md             # 本文件（Schema）
+├── Templates/            # Obsidian 模板（用户工具，LLM 不修改）
+└── assets/               # 图片等附件
 ```
 
-### 权限
+**raw/** — 用户策展的原始资料集合。不可变——LLM 读取但绝不修改。这是真相来源。
 
-| 目录 | LLM 权限 |
-|------|----------|
-| `00-Inbox/` | 读 + 删除已处理的文件 |
-| `10-Sources/` | 只读 |
-| `20-Project/` | 追加笔记、创建项目目录 |
-| `30-Area/` | 按需协助更新 |
-| `40-Garden/` | 全权读写 |
-| `50-Archive/` | 只读 |
-| `90-Meta/` | 读写 index.md 和 log.md，不动 `_Templates/` |
+**wiki/** — LLM 全权维护的 Markdown 页面。摘要、实体页、概念页、对比、综述。LLM 创建页面、根据新资料更新、维护交叉引用、保持一致性。用户阅读；LLM 编写。
 
----
+**AGENTS.md** — 本文件。告诉 LLM Wiki 的结构、约定和操作工作流。用户和 LLM 随时间共同演化此文件。
 
-## Garden 组织原则
+## 核心操作
 
-### 新主题子目录
+### Ingest（摄入）
 
-某个方向积累了 3+ 个页面且与现有主题明显不同时，创建新子目录。宁可少建，尽量归入已有主题。
+用户将新资料放入 `raw/` 后说 **"ingest"** 或 **"摄入"** 时执行。
 
-### 新页面 vs 更新已有页面
+1. **读取资料**：读取 `raw/` 中的新文件，识别新增内容（可通过 `jj status` 或直接比较文件修改时间）
 
-- 独立标题 + 3 个以上要点 → 新页面
-- 对已有主题的 1-2 个补充 → 追加到已有页面
-- 与已有内容矛盾 → 追加 + `⚠️ 矛盾标注`
-- 不确定 → 更新已有页面
+2. **提取知识**：
+   - 识别核心概念、实体、论点、数据点
+   - 对每个核心概念，找到 `wiki/` 中匹配的主题子目录
+   - 判断是需要新建页面还是追加到已有页面
 
-### 交叉引用
+3. **写入 Wiki**：
+   - 为每个重要来源创建摘要页面（如果资料足够丰富）
+   - 更新相关实体/概念页面：追加新信息，修订摘要
+   - 标注矛盾：若新资料与已有内容冲突，标注 `> ⚠️ 矛盾`
+   - 在页面 frontmatter 的 `sources` 字段中记录来源
 
-- Garden 子目录内互引：`[[页面名]]`
-- 跨子目录引用：`[[Languages/Rust]]`
-- 每次更新页面必须检查是否需要新增 wikilink
+4. **维护交叉引用**：
+   - 检查新增内容是否需要链接到其他 wiki 页面
+   - 使用 `[[页面名]]` wikilink 建立连接
+   - 同主题内用 `[[页面名]]`，跨主题用 `[[主题/页面名]]`
 
----
+5. **更新索引与日志**：
+   - 更新 `wiki/index.md`：新增/变更页面的链接和摘要
+   - 追加 `wiki/log.md`：
+     ```markdown
+     ## [YYYY-MM-DD] ingest | {资料标题}
+     - 新建: [[主题/页面A]]、[[主题/页面B]]
+     - 更新: [[主题/页面C]]、[[主题/页面D]]
+     ```
 
-## 其他操作
+6. **提交**：
+   ```bash
+   jj commit -m "ingest: {资料摘要}"
+   ```
 
-### 查询
+7. **汇报**：向用户列出新建/更新了哪些页面，标注矛盾或不确定信息。
 
-1. 先读 `90-Meta/index.md` 定位相关 Garden 页面
-2. 综合回答，带 `[[页面引用]]`
-3. 若回答有价值，主动建议沉淀到 Garden
+### Query（查询）
 
-### 梳理
+用户提出知识性问题时执行。
 
-用户说"梳理"时，检查：
-- 矛盾：不同页面对同一主题的论述是否冲突
-- 孤立：无入链的页面
-- 断裂：`[[link]]` 指向不存在的页面
-- 过时：被新资料取代的内容
-- 缺口：被多次提及但无独立页面的概念
-输出报告，追加到 `log.md`，提交。
+1. **定位**：先读 `wiki/index.md`，找到相关的主题和页面
+2. **深入**：读取相关页面，综合信息
+3. **回答**：综合回答，标注引用来源（使用 wikilink）
+4. **沉淀（可选）**：如果回答本身有独立价值（对比分析、新连接、深度解释），主动询问用户是否要将其沉淀为新的 Wiki 页面
 
----
+### Lint（检查）
 
-## 格式约定
+用户说 **"lint"** 或 **"检查"** 时执行。
 
-### 页面模板
+扫描 Wiki 的健康状况：
+- **矛盾**：不同页面对同一主题的论述是否冲突
+- **孤立**：无入链的页面
+- **断裂**：wikilink 指向不存在的页面
+- **过时**：被新资料取代的内容
+- **缺口**：重要概念被多次提及但无独立页面
 
-**Garden 知识页**：
+输出报告，追加到 `wiki/log.md`，提交。
+
+## 页面格式约定
+
+### 知识页面
+
 ```markdown
 ---
-type: garden
+type: page
 topic: {子目录名}
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources: []
+sources: ["raw/Articles/xxx.md"]
 ---
 
 # {标题}
 
 ## 概述
+1-2 句话概括。
 
 ## 核心内容
+按逻辑分段组织。
 
 ## 相关页面
-- [[...]]
+- [[相关页1]] — 关系说明
+- [[相关页2]] — 关系说明
 
 ## 演化记录
-- [YYYY-MM-DD] ...
+- [YYYY-MM-DD] 变更说明
 ```
 
-**Garden 主题入口** (`index.md`)：
+### 主题入口页 (index.md)
+
 ```markdown
 ---
-type: garden-index
+type: index
 topic: {子目录名}
 updated: YYYY-MM-DD
 ---
 
 # {主题名}
 
-> 一句话描述
+> 一句话描述本主题。
 
 ## 页面
 - [[页面A]] — 摘要
+- [[页面B]] — 摘要
 
-## 个人笔记
-（此区域由用户在 Obsidian 中编辑，LLM 不覆盖）
+## 待深入
+- [ ] 待探索的概念或问题
 ```
 
 ### 标注
@@ -274,19 +152,42 @@ updated: YYYY-MM-DD
 > 待解决：...
 
 > 🤔 **待验证**
-> 仅来自单一来源。
+> 仅来自单一来源或非权威渠道。
 ```
 
 ### Frontmatter 字段
 
 | 字段 | 取值 | 说明 |
 |------|------|------|
-| `type` | `garden` / `garden-index` / `project` / `area` | 页面类型 |
-| `status` | `draft` / `mature` | 成熟度 |
-| `topic` | Garden 子目录名 | 所属主题 |
-| `sources` | 列表 | 来源路径或 URL |
+| `type` | `page` / `index` | 页面类型 |
+| `topic` | 子目录名 | 所属主题 |
+| `sources` | 路径列表 | 原始资料引用 |
 | `created` / `updated` | YYYY-MM-DD | 日期 |
 
----
+### Wikilink 规范
 
-> **v5.0** — Inbox 驱动 + 模板 + Web Clipper。
+- **同主题内**：`[[页面名]]`
+- **跨主题**：`[[主题名/页面名]]`（如 `[[Architecture/数据库设计]]`）
+- **原始资料**：`[[raw/Articles/文件名.md]]`
+- **始终使用 Obsidian wikilink 语法**
+
+## 新主题创建
+
+某个方向积累了 3+ 个独立页面且与现有主题明显不同时，创建新子目录。标准流程：
+1. 在 `wiki/` 下创建 `{topic}/` 目录
+2. 创建 `{topic}/index.md`（主题入口）
+3. 将已有页面移入（更新 wikilink）
+4. 更新 `wiki/index.md`
+5. 记录到 `wiki/log.md`
+
+宁可少建新主题，尽量归入已有主题。
+
+## 权限
+
+| 路径 | LLM 权限 |
+|------|----------|
+| `raw/` | 只读 |
+| `wiki/` | 全权读写 |
+| `Templates/` | 只读 |
+| `assets/` | 只读（用户管理） |
+| `AGENTS.md` | 读写（与用户协商） |

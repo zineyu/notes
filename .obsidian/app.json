@@ -7,6 +7,14 @@
   "userIgnoreFilters": [
     "assets/",
     "90-Meta/_Templates/",
-    "**/index.md"
+    "AGENTS.md",
+    "40-Garden/Architecture/index.md",
+    "90-Meta/index.md",
+    "40-Garden/Methodologies/index.md",
+    "40-Garden/DevOps/index.md",
+    "40-Garden/Languages/index.md",
+    "40-Garden/Agent/index.md",
+    "40-Garden/Frontend/index.md",
+    "90-Meta/log.md"
   ]
 }
