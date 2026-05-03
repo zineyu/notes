@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "37f70f2ecfee2c9c",
+        "id": "5ef8b3a47866c385",
         "type": "tabs",
         "children": [
           {
-            "id": "c6fbdc896e8577f4",
+            "id": "c48f613544ff47a6",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -188,10 +188,13 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c6fbdc896e8577f4",
+  "active": "c48f613544ff47a6",
   "lastOpenFiles": [
-    "40-Garden/Agent/需求驱动开发.md",
+    "40-Garden/Agent/Skill 设计.md",
+    "40-Garden/Agent/index.md",
+    "40-Garden/Agent/SKILL 设计指南.md",
     "40-Garden/Agent/AI 编码工作流.md",
+    "40-Garden/Agent/需求驱动开发.md",
     "90-Meta/_Templates/Garden - index.md",
     "90-Meta/log.md",
     "90-Meta/index.md",
@@ -205,11 +208,8 @@
     "40-Garden/DevOps/index.md",
     "40-Garden/Architecture/index.md",
     "40-Garden/Languages/index.md",
-    "40-Garden/Agent/index.md",
     "40-Garden/Methodologies/index.md",
     "40-Garden/Frontend/index.md",
-    "40-Garden/Agent/Skill 设计.md",
-    "40-Garden/Agent/SKILL 设计指南.md",
     "40-Garden/Methodologies/TDD.md",
     "40-Garden/Methodologies/DDD.md",
     "40-Garden/Methodologies/BDD.md",

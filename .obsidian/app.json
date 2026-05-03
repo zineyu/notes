@@ -3,5 +3,10 @@
   "showLineNumber": true,
   "vimMode": true,
   "readableLineLength": true,
-  "templateFolder": "90-Meta/_Templates"
+  "templateFolder": "90-Meta/_Templates",
+  "userIgnoreFilters": [
+    "assets/",
+    "90-Meta/_Templates/",
+    "**/index.md"
+  ]
 }
