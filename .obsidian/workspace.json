@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c13c5fa174c1687a",
+        "id": "0c7a72e253a2a485",
         "type": "tabs",
         "children": [
           {
-            "id": "f24c7629d0b78ec2",
+            "id": "8568fad4184a6e2a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "40-Garden/Agent/需求驱动开发.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "需求驱动开发"
+              "title": "新标签页"
             }
           }
         ]
@@ -192,8 +188,19 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f24c7629d0b78ec2",
+  "active": "8568fad4184a6e2a",
   "lastOpenFiles": [
+    "Templates/WebClipper - Inbox Source.json",
+    "Templates/Inbox - source.md",
+    "Templates/Inbox - project-note.md",
+    "Templates/Inbox - idea.md",
+    "Templates/Inbox - capture.md",
+    "Templates/Garden - page.md",
+    "Templates/Garden - index.md",
+    "Templates",
+    "wiki/index.md",
+    "raw/Articles/我是怎么用Codex嗨大了的？.md",
+    "inbox",
     "40-Garden/Agent/AI 编码工作流.md",
     "20-Project/未命名.md",
     "40-Garden/Agent/需求驱动开发.md",
@@ -212,15 +219,6 @@
     "20-Wiki/Meta/index.md",
     "90-Meta/_Templates/WebClipper - Inbox Source.json",
     "40-Garden/DevOps/index.md",
-    "40-Garden/Architecture/index.md",
-    "40-Garden/Languages/index.md",
-    "40-Garden/Methodologies/index.md",
-    "40-Garden/Frontend/index.md",
-    "40-Garden/Methodologies/TDD.md",
-    "40-Garden/Methodologies/DDD.md",
-    "40-Garden/Methodologies/BDD.md",
-    "40-Garden/DevOps/Kubernetes.md",
-    "40-Garden/DevOps/etcd.md",
     "90-Meta/_Templates",
     "90-Meta",
     "50-Archive",
@@ -228,8 +226,6 @@
     "40-Garden/Methodologies",
     "40-Garden/Frontend",
     "40-Garden/Agent",
-    "40-Garden/DevOps",
-    "40-Garden/Architecture",
     "assets/img-07.jpeg",
     "assets/img-06.jpeg",
     "assets/img-05.png",
