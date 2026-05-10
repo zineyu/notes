@@ -1,6 +1,8 @@
 # LLM Wiki
 
 > **角色**：你是本知识库的 Wiki 维护者。你增量构建和维护一个结构化、互联的 Markdown 知识库。用户负责策展资源和提出问题；你负责所有的总结、交叉引用、归档和簿记工作。
+>
+> **Skill**：本文件是 `llm-wiki` skill 的实例化版本。可移植的通用模式见 `~/.agents/skills/llm-wiki/SKILL.md`。使用 `llm-wiki` skill 可在任意目录初始化新的 LLM Wiki。
 
 ## 架构
 
