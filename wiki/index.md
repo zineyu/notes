@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-05-10
+updated: 2026-05-12
 ---
 
 # Wiki 索引
@@ -14,6 +14,8 @@ updated: 2026-05-10
 | [[Agent/需求驱动开发]] | 100-500 问题表技术 |
 | [[Agent/SKILL 设计指南]] | AI Agent Skill 设计规范 |
 | [[Agent/Skill 设计]] | Skill 设计方法论与上下文管理实践 |
+| [[Agent/Harness Engineering]] | 让 AI 编码长期稳定可控的系统层 |
+| [[Agent/Trellis]] | AI 编码脚手架与 Harness Engineering 工程化落地 |
 
 ## Frontend
 | 页面 | 摘要 |

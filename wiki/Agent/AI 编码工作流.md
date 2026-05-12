@@ -1,17 +1,26 @@
 ---
-type: garden
+type: page
 topic: Agent
 created: 2026-05-03
-updated: 2026-05-03
-sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md"]
+updated: 2026-05-12
+sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md", "raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf"]
 ---
 
 # AI 编码工作流
 
 ## 概述
-使用 AI Agent（Codex、Claude Code）进行软件开发的完整工序，核心思想是将传统软件工程规范接入 AI 辅助开发流程。
+使用 AI Agent（Codex、Claude Code）进行软件开发的完整工序，核心思想是将传统软件工程规范接入 AI 辅助开发流程：Vibe Coding 推动需求快速进入可验证状态，[[Harness Engineering]] 让流程稳定可控，[[Trellis]] 把规范、任务、上下文、验证和沉淀工程化落地。
 
 ## 核心工序
+
+### 0. Vibe Coding 闭环
+Vibe Coding 的核心不是“写得快”，而是尽快把想法推进到可讨论、可验证、可迭代的状态。它强调从抽象需求进入可视化和可执行对象：
+
+```text
+需求澄清 → PRD → 原型图 → 前端 → 后端 → 测试 → 反向迭代
+```
+
+原型图把抽象需求变成可视化讨论对象；PRD / Spec 定义“做到什么程度才算完成”；测试和评测把“看起来能用”变成“稳定能用”，并反向推动规格和实现迭代。
 
 ### 1. 项目初始化
 - 创建项目文件夹，建立 `docs/` 和 `prompts/` 两个子目录
@@ -36,8 +45,9 @@ sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md"]
 - 开发阶段使用 gpt-5.5（自纠错能力强）
 
 ### 5. Harness 驱动开发
-- 使用 Trellis 等 harness 框架编排多轮开发
-- 核心：trellis-meta → trellis-brainstorm → trellis-update-spec → 多轮开发
+- 使用 [[Trellis]] 等 harness 框架编排多轮开发
+- 核心：把规则、上下文、任务、验证和历史沉淀接入 Agent 生命周期
+- 个人项目通常先做好 `AGENTS.md` / `CLAUDE.md`、lint、Spec；长期项目再引入 Trellis 等框架
 - 长期任务使用 codex-autoresearch skill
 
 ### 6. 检验与结项
@@ -62,9 +72,14 @@ sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md"]
 
 传统软件工程（系统工程、控制论）是 AI 编码的知识基础。vibe → spec → harness → agent 是有规律可循的。
 
+真正优秀的 AI Coding，不是让模型替人写完代码，而是设计一套系统，使模型持续稳定地把事情做对。
+
 ## 相关页面
 - [[需求驱动开发]] — 100-500 问题表技术详解
 - [[Skill 设计]] — Agent Skill 设计方法论
+- [[Harness Engineering]] — 让 AI 编码长期稳定可控的系统层
+- [[Trellis]] — Harness Engineering 的工程化落地方案
 
 ## 演化记录
+- [2026-05-12] 从 [[raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf]] 补充 Vibe Coding 闭环、Harness 和 Trellis 落地关系
 - [2026-05-03] 从 [[raw/Articles/我是怎么用Codex嗨大了的？.md]] 提取

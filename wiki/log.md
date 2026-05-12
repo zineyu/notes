@@ -2,6 +2,11 @@
 
 > LLM Wiki 按时间顺序的操作记录。每行以固定前缀开头，可用 `grep` 解析。
 
+## [2026-05-12] process-inbox | 从 Vibe Coding 到 Harness Engineering，再到 Trellis 落地
+- 新建: [[Agent/Harness Engineering]]、[[Agent/Trellis]]
+- 更新: [[Agent/AI 编码工作流]]、[[Agent/index]]、[[wiki/index.md]]
+- 归档: [[raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf]]
+
 ## [2026-05-10] migrate | LLM Wiki 架构重构
 - 目录重构：`10-Sources/` → `raw/`，`40-Garden/` → `wiki/`
 - 模板移至 `Templates/`（根目录），便于访问
