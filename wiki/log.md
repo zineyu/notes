@@ -7,6 +7,12 @@
 - 更新: [[Agent/AI 编码工作流]]、[[Agent/index]]、[[wiki/index.md]]
 - 归档: [[raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf]]
 
+## [2026-06-02] process-inbox | DSPy 优化器三篇
+- 新建主题: [[DSPy/index]]
+- 新建: [[DSPy/BootstrapFewShot]]、[[DSPy/MIPROv2]]、[[DSPy/GEPA]]
+- 更新: [[wiki/index.md]]
+- 归档: [[raw/Articles/dspy_bootstrap_fewshot_analysis.md]]、[[raw/Articles/dspy_gepa_analysis.md]]、[[raw/Articles/dspy_miprov2_analysis.md]]
+
 ## [2026-05-10] migrate | LLM Wiki 架构重构
 - 目录重构：`10-Sources/` → `raw/`，`40-Garden/` → `wiki/`
 - 模板移至 `Templates/`（根目录），便于访问

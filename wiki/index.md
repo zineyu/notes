@@ -58,6 +58,12 @@ updated: 2026-05-12
 | [[Methodologies/TDD]] | 测试驱动开发 |
 | [[Methodologies/BDD]] | 行为驱动开发 |
 | [[Methodologies/DDD]] | 领域驱动设计 |
+## DSPy
+| 页面 | 摘要 |
+|------|------|
+| [[DSPy/BootstrapFewShot]] | 用 Teacher 模型自动筛选高质量 few-shot 示例 |
+| [[DSPy/MIPROv2]] | 联合优化指令和例题的贝叶斯优化方法 |
+| [[DSPy/GEPA]] | 基于反射变异的进化算法优化指令 |
 
 ## 原始资料
 参见 `raw/` 目录。

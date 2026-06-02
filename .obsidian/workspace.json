@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0c7a72e253a2a485",
+        "id": "b71c913e2a753fe0",
         "type": "tabs",
         "children": [
           {
-            "id": "8568fad4184a6e2a",
+            "id": "07619178b67483c7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "inbox/dspy_gepa_analysis.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "dspy_gepa_analysis"
             }
           }
         ]
@@ -188,8 +192,21 @@
       "bases:新建数据库": false
     }
   },
-  "active": "8568fad4184a6e2a",
+  "active": "07619178b67483c7",
   "lastOpenFiles": [
+    "inbox/dspy_miprov2_analysis.md",
+    "inbox/dspy_bootstrap_fewshot_analysis.md",
+    "inbox/dspy_gepa_analysis.md",
+    "inbox/TongMengHuiAI 会话历史面板需求交接.md",
+    "wiki/Agent/需求驱动开发.md",
+    "wiki/Agent/AI 编码工作流.md",
+    "wiki/Agent/Trellis.md",
+    "wiki/Agent/Harness Engineering.md",
+    "raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf",
+    "wiki/Agent/index.md",
+    "wiki/Agent/SKILL 设计指南.md",
+    "wiki/Agent/Skill 设计.md",
+    "raw/Articles/我是怎么用Codex嗨大了的？.md",
     "Templates/WebClipper - Inbox Source.json",
     "Templates/Inbox - source.md",
     "Templates/Inbox - project-note.md",
@@ -199,7 +216,6 @@
     "Templates/Garden - index.md",
     "Templates",
     "wiki/index.md",
-    "raw/Articles/我是怎么用Codex嗨大了的？.md",
     "inbox",
     "40-Garden/Agent/AI 编码工作流.md",
     "20-Project/未命名.md",
@@ -208,24 +224,12 @@
     "ZRainbow.md",
     "90-Meta/index.md",
     "40-Garden/Agent/index.md",
-    "40-Garden/Agent/SKILL 设计指南.md",
-    "90-Meta/_Templates/Garden - index.md",
-    "90-Meta/log.md",
-    "90-Meta/_Templates/Inbox - source.md",
-    "90-Meta/_Templates/Garden - page.md",
-    "90-Meta/_Templates/Inbox - project-note.md",
-    "90-Meta/_Templates/Inbox - idea.md",
-    "90-Meta/_Templates/Inbox - capture.md",
-    "20-Wiki/Meta/index.md",
     "90-Meta/_Templates/WebClipper - Inbox Source.json",
-    "40-Garden/DevOps/index.md",
     "90-Meta/_Templates",
     "90-Meta",
     "50-Archive",
     "40-Garden/Languages",
     "40-Garden/Methodologies",
-    "40-Garden/Frontend",
-    "40-Garden/Agent",
     "assets/img-07.jpeg",
     "assets/img-06.jpeg",
     "assets/img-05.png",
