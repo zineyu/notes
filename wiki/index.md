@@ -50,6 +50,7 @@ updated: 2026-05-12
 |------|------|
 | [[DevOps/Kubernetes]] | K8s 容器编排最佳实践 |
 | [[DevOps/etcd]] | etcd 分布式键值存储 |
+| [[DevOps/Nix Home Manager]] | Home Manager 用户环境声明式管理与配置组织最佳实践 |
 | [[DevOps/运维与 SRE]] | 运维与站点可靠性工程 |
 
 ## Methodologies

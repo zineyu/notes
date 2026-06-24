@@ -2,6 +2,11 @@
 
 > LLM Wiki 按时间顺序的操作记录。每行以固定前缀开头，可用 `grep` 解析。
 
+
+## [2026-06-24] process-inbox | Nix Home Manager 最佳实践
+- 新建: [[DevOps/Nix Home Manager]]
+- 更新: [[DevOps/index]]、[[wiki/index.md]]
+- 归档: [[raw/Articles/Nix Home Manager 最佳实践.md]]
 ## [2026-05-12] process-inbox | 从 Vibe Coding 到 Harness Engineering，再到 Trellis 落地
 - 新建: [[Agent/Harness Engineering]]、[[Agent/Trellis]]
 - 更新: [[Agent/AI 编码工作流]]、[[Agent/index]]、[[wiki/index.md]]
