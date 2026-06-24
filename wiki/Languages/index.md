@@ -7,6 +7,7 @@
 - [[Rust 类型模式]] — 类型层面设计模式
 - [[Rust 并发与运行时]] — 异步与并发
 - [[Rust 系统级生产环境]] — 系统级与生产环境
+- [[Rust 可观测性]] — tracing、metrics、OpenTelemetry 与生产遥测实践
 - [[Go]] — Go 语言最佳实践
 
 ## 我的笔记

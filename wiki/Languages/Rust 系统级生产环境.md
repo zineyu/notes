@@ -339,6 +339,20 @@ async fn update_cache(cache: &tokio::sync::Mutex<Cache>, key: String, value: Str
 
 ---
 
+## 4.8 可观测性与生产遥测
+
+### 核心原则
+
+- **日志、指标、链路追踪三位一体**：日志解释事件，指标衡量严重度，trace 定位跨服务链路。
+- **优先使用 `tracing`**：用 Span 传递结构化上下文，避免在每条日志中重复手写 request id。
+- **避免 Span guard 跨 `.await`**：异步代码中使用 `#[instrument]` 或 `.instrument()`，不要手动 `span.enter()` 后等待 Future。
+- **生产环境限制日志级别**：发布版可用 `max_level_info` 等编译期 feature 移除 debug/trace。
+- **优雅关闭时 flush 遥测**：OTLP/trace provider 在进程退出前需要 shutdown，避免尾部数据丢失。
+
+详见 [[Rust 可观测性]]。
+
+---
+
 ## 反模式
 
 ### 错误处理
@@ -397,3 +411,4 @@ async fn update_cache(cache: &tokio::sync::Mutex<Cache>, key: String, value: Str
 ## 相关笔记
 
 - [[Rust]] — Rust 核心最佳实践与概述
+- [[Rust 可观测性]] — tracing、metrics、OpenTelemetry 与生产遥测

@@ -9,6 +9,8 @@
 4. **可观测性三位一体（Observability）** — Metrics（指标）、Logging（日志）、Tracing（追踪）三位一体。基于症状的告警优于基于原因的告警。
 5. **blameless 事后分析（Blameless Postmortems）** — 故障发生后进行无责复盘，聚焦系统性改进而非追究个人责任。
 
+补充到 Rust 服务时，可参考 [[Languages/Rust 可观测性]]：用 `tracing` 组织结构化日志和 Span，用 Histogram 关注 P99/P999，用 OTLP 接入 Jaeger/Grafana Tempo，并在优雅关闭时 flush 遥测数据。
+
 ## 项目目录/架构规范
 
 ```
@@ -116,3 +118,4 @@ groups:
 
 - [[Kubernetes]] — 容器编排系统的运维核心
 - [[etcd]] — 分布式系统的关键数据存储运维
+- [[Languages/Rust 可观测性]] — Rust 服务的日志、指标与链路追踪实践

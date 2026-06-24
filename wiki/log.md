@@ -3,6 +3,11 @@
 > LLM Wiki 按时间顺序的操作记录。每行以固定前缀开头，可用 `grep` 解析。
 
 
+## [2026-06-24] process-inbox | Rust 可观测性与 Agent 编排模式
+- 新建: [[Languages/Rust 可观测性]]、[[Agent/Sub-agent 与工具型 Agent]]
+- 更新: [[Languages/Rust]]、[[Languages/Rust 系统级生产环境]]、[[Languages/index]]、[[DevOps/运维与 SRE]]、[[Agent/Harness Engineering]]、[[Agent/index]]、[[wiki/index.md]]
+- 归档: [[raw/Articles/Rust 可观测性实战：别再 println 了.md]]、[[raw/Articles/Where to use sub-agents versus agents as tools.md]]
+
 ## [2026-06-24] process-inbox | Nix Home Manager 最佳实践
 - 新建: [[DevOps/Nix Home Manager]]
 - 更新: [[DevOps/index]]、[[wiki/index.md]]

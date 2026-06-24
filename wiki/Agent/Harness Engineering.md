@@ -2,7 +2,7 @@
 type: page
 topic: Agent
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-06-24
 sources: ["raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf"]
 ---
 
@@ -47,7 +47,7 @@ Harness 的价值不是让模型“更聪明”，而是把开发过程变成一
 
 - **纯配置方案**：通过 `CLAUDE.md`、`AGENTS.md`、skills、lint 规则和项目文档，把约束层手动落地。
 - **框架增强方案**：如 [[Trellis]]、ccg-workflow，在配置层上增加 Spec 系统和 hook 自动注入，使规范持续进入每次交互。
-- **多角色编排方案**：如 oh-my-claudecode、oh-my-opencode，通过 planner、executor、reviewer、debugger 等角色分工提高复杂任务推进能力。
+- **多角色编排方案**：如 oh-my-claudecode、oh-my-opencode，通过 planner、executor、reviewer、debugger 等角色分工提高复杂任务推进能力；具体设计时要区分可复用的工具型 Agent 与依赖共享上下文的 [[Sub-agent 与工具型 Agent|sub-agent]]。
 
 ### 成本与退化风险
 
@@ -59,6 +59,8 @@ Harness 本身也会产生维护成本。每个组件都编码了一个假设：
 - [[AI 编码工作流]] — Harness 是 AI 编码闭环中让过程稳定可控的系统层
 - [[Trellis]] — Trellis 是 Harness Engineering 的工程化落地方案
 - [[Skill 设计]] — Skill 是 Harness 中可复用的上下文和行为单元
+- [[Sub-agent 与工具型 Agent]] — 说明多 Agent Harness 中工具边界与委派边界的差异
 
 ## 演化记录
 - [2026-05-12] 从 [[raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf]] 提取
+- [2026-06-24] 补充工具型 Agent 与 sub-agent 的编排边界

@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-05-12
+updated: 2026-06-24
 ---
 
 # Wiki 索引
@@ -16,6 +16,7 @@ updated: 2026-05-12
 | [[Agent/Skill 设计]] | Skill 设计方法论与上下文管理实践 |
 | [[Agent/Harness Engineering]] | 让 AI 编码长期稳定可控的系统层 |
 | [[Agent/Trellis]] | AI 编码脚手架与 Harness Engineering 工程化落地 |
+| [[Agent/Sub-agent 与工具型 Agent]] | 多 Agent 系统中工具调用与层级委派的取舍 |
 
 ## Frontend
 | 页面 | 摘要 |
@@ -35,6 +36,7 @@ updated: 2026-05-12
 | [[Languages/Rust 类型模式]] | Rust 类型层面设计模式 |
 | [[Languages/Rust 并发与运行时]] | Rust 异步与并发 |
 | [[Languages/Rust 系统级生产环境]] | Rust 系统级与生产环境 |
+| [[Languages/Rust 可观测性]] | Rust 生产级日志、指标、链路追踪与遥测实践 |
 | [[Languages/Go]] | Go 语言最佳实践 |
 
 ## Architecture

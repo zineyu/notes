@@ -35,6 +35,7 @@
 | **类型层面模式** | [[Rust 类型模式]] | 泛型、Trait、Newtype、Type-State、PhantomData |
 | **并发与运行时** | [[Rust 并发与运行时]] | 通道与消息传递、线程与并行、闭包与高阶函数、函数式编程、智能指针 |
 | **系统与生产环境** | [[Rust 系统级生产环境]] | 错误处理、序列化与零拷贝、Unsafe Rust、宏、测试、Crate 架构、Async/Await |
+| **可观测性** | [[Rust 可观测性]] | tracing、metrics、OpenTelemetry、SpanTrace 与生产级遥测 |
 
 ---
 
@@ -143,20 +144,21 @@ anyhow = "1.0"
 
 ### 常用 crate
 
-| 用途 | 推荐 crate |
-|------|-----------|
-| 异步运行时 | `tokio` |
-| 错误处理（库） | `thiserror` |
-| 错误处理（应用） | `anyhow` |
-| 序列化 | `serde` |
-| 零拷贝序列化 | `zerocopy`, `bytemuck` |
-| 属性测试 | `proptest` |
-| 基准测试 | `criterion` |
-| 并发通道 | `crossbeam-channel` |
-| 数据并行 | `rayon` |
-| 字节处理 | `bytes` |
-| 日志/追踪 | `tracing` |
-| 过程宏 | `syn`, `quote` |
+| 用途       | 推荐 crate                                                                          |
+| -------- | --------------------------------------------------------------------------------- |
+| 异步运行时    | `tokio`                                                                           |
+| 错误处理（库）  | `thiserror`                                                                       |
+| 错误处理（应用） | `anyhow`                                                                          |
+| 序列化      | `serde`                                                                           |
+| 零拷贝序列化   | `zerocopy`, `bytemuck`                                                            |
+| 属性测试     | `proptest`                                                                        |
+| 基准测试     | `criterion`                                                                       |
+| 并发通道     | `crossbeam-channel`                                                               |
+| 数据并行     | `rayon`                                                                           |
+| 字节处理     | `bytes`                                                                           |
+| 日志/追踪    | `tracing`                                                                         |
+| 可观测性     | `tracing`, `tracing-subscriber`, `metrics`, `opentelemetry-otlp`, `tracing-error` |
+| 过程宏      | `syn`, `quote`                                                                    |
 
 ---
 
@@ -165,4 +167,5 @@ anyhow = "1.0"
 - [[Rust 类型模式]] — 泛型、Trait、Newtype 等类型系统模式
 - [[Rust 并发与运行时]] — 异步与并发编程专题
 - [[Rust 系统级生产环境]] — 系统级与生产环境专题
+- [[Rust 可观测性]] — 日志、指标、链路追踪与生产遥测实践
 - [[后端架构]] — Rust 在后端架构中的应用场景
