@@ -3,6 +3,7 @@ tags:
   - wiki
   - Frontend
   - page
+  - Vite
 ---
 # Vite 最佳实践
 

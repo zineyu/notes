@@ -3,6 +3,7 @@ tags:
   - wiki
   - Frontend
   - page
+  - JavaScript
 ---
 # JavaScript 最佳实践
 

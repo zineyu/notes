@@ -3,6 +3,7 @@ tags:
   - wiki
   - Frontend
   - page
+  - TypeScript
 ---
 # TypeScript 最佳实践
 

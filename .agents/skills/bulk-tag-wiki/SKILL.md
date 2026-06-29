@@ -26,6 +26,17 @@ tags: [skill, wiki, maintenance]
 
 在此之上可追加：用户指定的 tag、来源类型 tag、内容关键词 tag、已有自定义 tag。
 
+## 可选 tag 维度
+
+1. **来源类型**：根据 `sources` 路径前缀自动添加：
+   - `raw/Articles/` → `article`
+   - `raw/Papers/` → `paper`
+   - `raw/Books/` → `book`
+   - `raw/Podcasts/` → `podcast`
+   - `raw/Misc/` → `misc`
+
+2. **内容关键词**：从 frontmatter `title` 或文件名提取核心术语，例如 `Rust`、`Kubernetes`、`observability`、`type-patterns`、`Harness-Engineering`。使用词边界匹配，避免把 `AI` 误识别为 `Tailwind` 的子串。
+
 ## When to use
 
 - 用户说「给 wiki 文件加 tag」、「add tags to wiki」、「批量更新 frontmatter tags」。

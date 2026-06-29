@@ -3,6 +3,8 @@ tags:
   - wiki
   - Languages
   - page
+  - Rust
+  - concurrency
 ---
 # Rust 并发与运行时
 

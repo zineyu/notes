@@ -3,6 +3,8 @@ tags:
   - wiki
   - Languages
   - page
+  - Rust
+  - type-patterns
 ---
 # Rust 类型层面模式
 

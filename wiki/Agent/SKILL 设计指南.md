@@ -10,6 +10,7 @@ tags:
   - wiki
   - Agent
   - page
+  - Skill
   - clippings
 ---
 最近需要写一个Skill用于拓展之前grok-search的相关功能，希望能做到写代码的时候进行事实核查以及代码demo，技术路线，API版本校验的功能  

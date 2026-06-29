@@ -8,6 +8,8 @@ tags:
   - wiki
   - Agent
   - page
+  - article
+  - sub-agent
 ---
 # Sub-agent 与工具型 Agent
 

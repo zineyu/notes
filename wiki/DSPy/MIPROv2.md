@@ -8,6 +8,8 @@ tags:
   - wiki
   - DSPy
   - page
+  - article
+  - MIPROv2
 ---
 # MIPROv2：联合优化指令和例题
 

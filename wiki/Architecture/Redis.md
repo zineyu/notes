@@ -3,6 +3,7 @@ tags:
   - wiki
   - Architecture
   - page
+  - Redis
 ---
 > 参考来源：[Redis Anti-Patterns](https://redis.io/learn/howtos/antipatterns/)、[Redis Best Practices](https://redis.io/topics/best-practices)、[Redis Memory Optimization](https://redis.antirez.com/fundamental/memory-optimization.html)
 

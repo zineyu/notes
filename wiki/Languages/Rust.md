@@ -3,6 +3,7 @@ tags:
   - wiki
   - Languages
   - page
+  - Rust
 ---
 # Rust 最佳实践
 

@@ -3,6 +3,8 @@ tags:
   - wiki
   - Frontend
   - page
+  - Tailwind
+  - CSS
 ---
 # Tailwind CSS 最佳实践
 

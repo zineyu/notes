@@ -14,6 +14,12 @@ tags:
 - 保留已有自定义 tag（如 `clippings`）
 - 更新: [[wiki/index.md]]、[[wiki/log.md]]、[[AGENTS.md]] 及所有主题页面
 
+## [2026-06-29] maintenance | 补充 wiki 内容 tag 与来源类型 tag
+- 为 34 个页面追加内容关键词 tag（如 `Rust`、`Kubernetes`、`observability`、`Harness-Engineering`）
+- 根据 `sources` 路径追加来源类型 tag（`article`）
+- 保留基础三层 tag 与已有自定义 tag
+- 更新: [[wiki/log.md]]、[[.agents/skills/bulk-tag-wiki/SKILL.md]] 及 34 个主题页面
+
 ## [2026-06-24] process-inbox | Rust 可观测性与 Agent 编排模式
 - 新建: [[Languages/Rust 可观测性]]、[[Agent/Sub-agent 与工具型 Agent]]
 - 更新: [[Languages/Rust]]、[[Languages/Rust 系统级生产环境]]、[[Languages/index]]、[[DevOps/运维与 SRE]]、[[Agent/Harness Engineering]]、[[Agent/index]]、[[wiki/index.md]]

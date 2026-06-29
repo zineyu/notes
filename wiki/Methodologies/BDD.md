@@ -3,6 +3,7 @@ tags:
   - wiki
   - Methodologies
   - page
+  - BDD
 ---
 > 来源：[Cucumber官方文档 - BDD](https://cucumber.io/docs/bdd/)、[Cucumber - Better Gherkin](https://cucumber.io/docs/bdd/better-gherkin)、[Cucumber - Anti-patterns](https://cucumber.io/docs/guides/anti-patterns/)
 

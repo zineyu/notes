@@ -3,6 +3,7 @@ tags:
   - wiki
   - Methodologies
   - page
+  - TDD
 ---
 > 来源：[Kent Beck - Canon TDD](https://tidyfirst.substack.com/p/canon-tdd)、[Martin Fowler - TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html)、[Kent Beck - Test-Driven Development: By Example](https://www.oreilly.com/library/view/test-driven-development/0321146530/)
 

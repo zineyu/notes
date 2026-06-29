@@ -3,6 +3,7 @@ tags:
   - wiki
   - Methodologies
   - page
+  - DDD
 ---
 > 来源：[Eric Evans - Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)、[Microsoft Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-domain-driven-design)、[ddd-leaven-v2](https://github.com/BottegaIT/ddd-leaven-v2) (880⭐)
 

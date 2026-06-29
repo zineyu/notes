@@ -8,6 +8,9 @@ tags:
   - wiki
   - Languages
   - page
+  - article
+  - Rust
+  - observability
 ---
 # Rust 可观测性
 

@@ -8,6 +8,9 @@ tags:
   - wiki
   - DevOps
   - page
+  - article
+  - Nix
+  - Home-Manager
 ---
 # Nix Home Manager
 

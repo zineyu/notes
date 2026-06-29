@@ -8,6 +8,8 @@ tags:
   - wiki
   - Agent
   - page
+  - article
+  - AI
 ---
 # AI 编码工作流
 

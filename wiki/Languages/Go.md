@@ -3,6 +3,7 @@ tags:
   - wiki
   - Languages
   - page
+  - Go
 ---
 # Golang 最佳实践
 

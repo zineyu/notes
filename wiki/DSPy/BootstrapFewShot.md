@@ -8,6 +8,8 @@ tags:
   - wiki
   - DSPy
   - page
+  - article
+  - BootstrapFewShot
 ---
 # BootstrapFewShot：让好老师帮你挑例题
 
