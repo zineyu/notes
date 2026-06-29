@@ -1,7 +1,8 @@
 ---
 created: 2025-04-27
+tags:
+  - Agent
 ---
-
 ## [[【SKILL 设计的最佳实践】什么是SKILL？怎么快速写一个优秀的SKILL？#What’s SKILL|What's SKILL]]
 SKILL设计的出发点就在于使用**渐进式披露**的方式，使用尽可能少的上下文实现功能的感知，真正实现有效加载上下文！
 因此一个优秀的SKILL.md应当同时具备:

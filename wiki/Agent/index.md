@@ -2,8 +2,10 @@
 type: index
 topic: Agent
 updated: 2026-06-24
+tags:
+  - Agent
+  - index
 ---
-
 # AI Agent
 
 > Agent 系统设计、Skill 设计、LLM Wiki 模式

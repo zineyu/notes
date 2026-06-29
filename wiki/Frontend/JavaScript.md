@@ -1,3 +1,8 @@
+---
+tags:
+  - Frontend
+---
+
 # JavaScript 最佳实践
 
 > 来源：[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)、[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) (148k ⭐)

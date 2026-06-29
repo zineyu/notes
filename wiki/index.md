@@ -1,8 +1,10 @@
 ---
 type: index
 updated: 2026-06-24
+tags:
+  - wiki
+  - index
 ---
-
 # Wiki 索引
 
 > 所有 Wiki 页面的内容目录。LLM 在查询时先读此文件定位相关页面。

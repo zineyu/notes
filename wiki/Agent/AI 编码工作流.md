@@ -4,8 +4,9 @@ topic: Agent
 created: 2026-05-03
 updated: 2026-05-12
 sources: ["raw/Articles/我是怎么用Codex嗨大了的？.md", "raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf"]
+tags:
+  - Agent
 ---
-
 # AI 编码工作流
 
 ## 概述

@@ -1,7 +1,18 @@
+---
+tags:
+  - wiki
+  - log
+---
+
 # 操作日志
 
 > LLM Wiki 按时间顺序的操作记录。每行以固定前缀开头，可用 `grep` 解析。
 
+
+## [2026-06-29] maintenance | 为所有 wiki 文件增加 tags
+- 为 43 个页面添加 frontmatter tags
+- 页面按所属主题打 tag，index 页面额外标记 `index`
+- 更新: [[wiki/index.md]]、[[wiki/log.md]] 及所有主题页面
 
 ## [2026-06-24] process-inbox | Rust 可观测性与 Agent 编排模式
 - 新建: [[Languages/Rust 可观测性]]、[[Agent/Sub-agent 与工具型 Agent]]

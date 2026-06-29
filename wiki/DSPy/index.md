@@ -2,8 +2,10 @@
 type: index
 topic: DSPy
 updated: 2026-06-02
+tags:
+  - DSPy
+  - index
 ---
-
 # DSPy
 
 > Stanford 提出的 LLM 编程框架，将 Prompt 工程转化为可优化的参数化程序。核心思想是用编译器/优化器替代手写 Prompt 调参。

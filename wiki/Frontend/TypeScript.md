@@ -1,3 +1,8 @@
+---
+tags:
+  - Frontend
+---
+
 # TypeScript 最佳实践
 
 > 来源：[TypeScript Official Docs](https://www.typescriptlang.org/docs/)、[TypeScript Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)

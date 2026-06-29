@@ -4,8 +4,9 @@ topic: Agent
 created: 2026-06-24
 updated: 2026-06-24
 sources: ["raw/Articles/Where to use sub-agents versus agents as tools.md"]
+tags:
+  - Agent
 ---
-
 # Sub-agent 与工具型 Agent
 
 ## 概述

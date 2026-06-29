@@ -1,3 +1,8 @@
+---
+tags:
+  - Frontend
+---
+
 # HTML5 最佳实践
 
 > 来源：[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)、[HTML Living Standard](https://html.spec.whatwg.org/)

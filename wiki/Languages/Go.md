@@ -1,3 +1,8 @@
+---
+tags:
+  - Languages
+---
+
 # Golang 最佳实践
 
 > 参考来源：[Effective Go](https://go.dev/doc/effective_go)、[Go Style Guide - Google](https://google.github.io/styleguide/go/guide.html)、[Standard Go Project Layout](https://github.com/golang-standards/project-layout)（55K+ stars）

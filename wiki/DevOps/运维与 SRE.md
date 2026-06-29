@@ -1,3 +1,8 @@
+---
+tags:
+  - DevOps
+---
+
 
 > 来源：[Google SRE Book](https://sre.google/sre-book/table-of-contents/)、[Google SRE - Service Level Objectives](https://sre.google/sre-book/service-level-objectives/)、[Google SRE - Eliminating Toil](https://sre.google/sre-book/eliminating-toil/)
 

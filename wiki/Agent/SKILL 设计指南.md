@@ -8,7 +8,9 @@ created: 2026-04-27
 description: 最近需要写一个Skill用于拓展之前grok-search的相关功能，希望能做到写代码的时候进行事实核查以及代码demo，技术路线，API版本校验的功能 【多模型MCP协同新实践】突破Claude Code 官方 Web_Search 的安全内容审查 — 检索增强的 Grok M
 tags:
   - clippings
+  - Agent
 ---
+
 最近需要写一个Skill用于拓展之前grok-search的相关功能，希望能做到写代码的时候进行事实核查以及代码demo，技术路线，API版本校验的功能  
 [【多模型MCP协同新实践】突破Claude Code 官方 Web\_Search 的安全内容审查 — 检索增强的 Grok MCP ( 补全 Vibe Coding 的最后一块拼图 - 开发调优 - LINUX DO](https://linux.do/t/topic/1356321)  
 在学习怎么写Skill的过程中发现，如果想要发挥Skill的作用，撰写一个好的SKILL.md非常重要。本来想找一下站里有没有相关信息，不过好像没有看到，看到好像之前也有佬也有问题  

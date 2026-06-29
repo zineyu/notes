@@ -4,8 +4,9 @@ topic: DSPy
 created: 2026-06-02
 updated: 2026-06-02
 sources: ["raw/Articles/dspy_miprov2_analysis.md"]
+tags:
+  - DSPy
 ---
-
 # MIPROv2：联合优化指令和例题
 
 ## 概述

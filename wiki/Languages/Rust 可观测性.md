@@ -4,8 +4,9 @@ topic: Languages
 created: 2026-06-24
 updated: 2026-06-24
 sources: ["raw/Articles/Rust 可观测性实战：别再 println 了.md"]
+tags:
+  - Languages
 ---
-
 # Rust 可观测性
 
 ## 概述
