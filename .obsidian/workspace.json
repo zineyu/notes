@@ -11,10 +11,10 @@
             "id": "9716e1ee364f512f",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -190,6 +190,8 @@
   },
   "active": "9716e1ee364f512f",
   "lastOpenFiles": [
+    "wiki/Languages/index.md",
+    "wiki/log.md",
     "wiki/index.md",
     "AGENTS.md",
     "raw/Articles/Where to use sub-agents versus agents as tools.md",
@@ -216,8 +218,6 @@
     "00-Inbox",
     "wiki/DSPy/index.md",
     "wiki/DSPy/MIPROv2.md",
-    "wiki/DSPy/BootstrapFewShot.md",
-    "wiki/DSPy/GEPA.md",
     "Templates/WebClipper - Inbox Source.json",
     "Templates",
     "inbox",

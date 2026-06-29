@@ -5,6 +5,7 @@
   "readableLineLength": false,
   "templateFolder": "Templates",
   "userIgnoreFilters": [
-    "assets/"
+    "assets/",
+    "Templates/"
   ]
 }
