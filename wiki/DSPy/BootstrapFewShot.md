@@ -5,7 +5,9 @@ created: 2026-06-02
 updated: 2026-06-02
 sources: ["raw/Articles/dspy_bootstrap_fewshot_analysis.md"]
 tags:
+  - wiki
   - DSPy
+  - page
 ---
 # BootstrapFewShot：让好老师帮你挑例题
 

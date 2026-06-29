@@ -4,7 +4,7 @@
 >
 > **Skill**：本文件是 `llm-wiki` skill 的实例化版本。可移植的通用模式见 `~/.agents/skills/llm-wiki/SKILL.md`。使用 `llm-wiki` skill 可在任意目录初始化新的 LLM Wiki。
 >
-> 当用户要求「给 wiki 中所有文件增加 tag」或类似批量修改 frontmatter tags 时，先读取并使用项目 skill `.pi/agent/skills/bulk-tag-wiki/SKILL.md`。
+> **默认约定**：所有 wiki 页面必须包含 `tags` frontmatter，且至少包含 `wiki`、主题目录名、`page`/`index`/`log` 三层 tag。处理 inbox、ingest 或批量修改 tag 时，先读取并使用项目 skill `.agents/skills/bulk-tag-wiki/SKILL.md`。
 
 ## 架构
 
@@ -61,9 +61,11 @@ notes/
    - 播客/访谈 → `raw/Podcasts/`
    - 其他 → `raw/Misc/`
 
-4. **更新索引与日志**：更新 `wiki/index.md`，追加 `wiki/log.md`
+4. **确保 tags**：按 `.agents/skills/bulk-tag-wiki/SKILL.md` 为所有新/更新的 wiki 页面补齐 `tags` frontmatter，至少包含 `wiki`、主题目录名、`page`/`index`。
 
-5. **提交**：`jj commit -m "inbox: {摘要}"`
+5. **更新索引与日志**：更新 `wiki/index.md`，追加 `wiki/log.md`
+
+6. **提交**：`jj commit -m "inbox: {摘要}"`
 
 6. **汇报**：列出处理份数、每份去向、新建/更新页面。
 
@@ -89,7 +91,9 @@ notes/
    - 使用 `[[页面名]]` wikilink 建立连接
    - 同主题内用 `[[页面名]]`，跨主题用 `[[主题/页面名]]`
 
-5. **更新索引与日志**：
+5. **确保 tags**：按 `.agents/skills/bulk-tag-wiki/SKILL.md` 为所有新/更新的 wiki 页面补齐 `tags` frontmatter，至少包含 `wiki`、主题目录名、`page`/`index`。
+
+6. **更新索引与日志**：
    - 更新 `wiki/index.md`：新增/变更页面的链接和摘要
    - 追加 `wiki/log.md`：
      ```markdown
@@ -138,6 +142,7 @@ topic: {子目录名}
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 sources: ["raw/Articles/xxx.md"]
+tags: ["wiki", "{topic}", "page"]
 ---
 
 # {标题}
@@ -165,6 +170,7 @@ sources: ["raw/Articles/xxx.md"]
 type: index
 topic: {子目录名}
 updated: YYYY-MM-DD
+tags: ["wiki", "{topic}", "index"]
 ---
 
 # {主题名}
@@ -199,6 +205,7 @@ updated: YYYY-MM-DD
 | `topic` | 子目录名 | 所属主题 |
 | `sources` | 路径列表 | 原始资料引用 |
 | `created` / `updated` | YYYY-MM-DD | 日期 |
+| `tags` | 字符串列表 | 基础 tag：`wiki`、主题目录名、类型（`page`/`index`/`log`）；可追加自定义 tag |
 
 ### Wikilink 规范
 

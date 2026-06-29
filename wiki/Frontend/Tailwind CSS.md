@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Frontend
+  - page
 ---
-
 # Tailwind CSS 最佳实践
 
 > 来源：[Tailwind CSS 官方文档](https://tailwindcss.com/docs)、[Utility-First Fundamentals](https://tailwindcss.com/docs/styling-with-utility-classes)

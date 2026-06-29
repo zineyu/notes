@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - DevOps
+  - page
 ---
-
 > 来源：[etcd 官方文档](https://etcd.io/docs/v3.5/)、[etcd Clustering Guide](https://etcd.io/docs/v3.5/op-guide/clustering/)、[etcd Hardware Recommendations](https://etcd.io/docs/v3.5/op-guide/hardware/)
 
 ## 核心原则

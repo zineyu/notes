@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - Methodologies
   - index
 ---
-
 # 方法论
 
 > 软件开发方法论：TDD、BDD、DDD

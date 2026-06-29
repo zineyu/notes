@@ -3,6 +3,7 @@ type: index
 topic: Agent
 updated: 2026-06-24
 tags:
+  - wiki
   - Agent
   - index
 ---

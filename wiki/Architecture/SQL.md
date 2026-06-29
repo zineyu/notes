@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Architecture
+  - page
 ---
-
 > 参考来源：[PostgreSQL Documentation](https://www.postgresql.org/docs/current/)、[PostgreSQL Performance Tips](https://www.postgresql.org/docs/current/performance-tips.html)、SQL Query Optimization Guide
 
 ---

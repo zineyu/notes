@@ -5,7 +5,9 @@ created: 2026-06-24
 updated: 2026-06-24
 sources: ["raw/Articles/Nix Home Manager 最佳实践.md"]
 tags:
+  - wiki
   - DevOps
+  - page
 ---
 # Nix Home Manager
 

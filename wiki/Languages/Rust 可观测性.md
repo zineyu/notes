@@ -5,7 +5,9 @@ created: 2026-06-24
 updated: 2026-06-24
 sources: ["raw/Articles/Rust 可观测性实战：别再 println 了.md"]
 tags:
+  - wiki
   - Languages
+  - page
 ---
 # Rust 可观测性
 

@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Languages
+  - page
 ---
-
 # Rust 并发与运行时
 
 > 参考来源：[The Rust Programming Language Book](https://doc.rust-lang.org/book/)、[Rust Atomics and Locks](https://marabos.nl/atomics/)、crossbeam 文档、tokio 文档

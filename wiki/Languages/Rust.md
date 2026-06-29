@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Languages
+  - page
 ---
-
 # Rust 最佳实践
 
 > 参考来源：[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)、[The Rust Programming Language Book](https://doc.rust-lang.org/book/)、[Rust Style Guide](https://doc.rust-lang.org/style-guide/)、[Rust Patterns Book](https://rust-unofficial.github.io/patterns/)、Cargo Workspaces 官方文档、Rust Atomics and Locks、Rust for Rustaceans

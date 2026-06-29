@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - Frontend
   - index
 ---
-
 # Frontend
 
 > 前端技术栈：React + TypeScript + Vite + Tailwind CSS

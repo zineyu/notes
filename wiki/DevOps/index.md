@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - DevOps
   - index
 ---
-
 # 运维与基础设施
 
 > Kubernetes、etcd、Nix/Home Manager、SRE 实践

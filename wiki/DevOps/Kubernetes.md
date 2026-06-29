@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - DevOps
+  - page
 ---
-
-
 > 来源：[Kubernetes 官方文档](https://kubernetes.io/docs/)、[Kubernetes RBAC Good Practices](https://kubernetes.io/docs/concepts/security/rbac-good-practices/)、[Considerations for large clusters](https://kubernetes.io/docs/setup/best-practices/cluster-large/)
 
 ## 核心原则

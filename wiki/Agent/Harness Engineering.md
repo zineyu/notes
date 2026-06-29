@@ -5,7 +5,9 @@ created: 2026-05-12
 updated: 2026-06-24
 sources: ["raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf"]
 tags:
+  - wiki
   - Agent
+  - page
 ---
 # Harness Engineering
 

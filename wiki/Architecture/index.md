@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - Architecture
   - index
 ---
-
 # 架构与数据库
 
 > 后端架构设计、数据库设计与优化

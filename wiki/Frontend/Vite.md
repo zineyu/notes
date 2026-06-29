@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Frontend
+  - page
 ---
-
 # Vite 最佳实践
 
 > 来源：[Vite 官方文档](https://vitejs.dev/guide/)、[Vite Performance Guide](https://vitejs.dev/guide/performance.html)

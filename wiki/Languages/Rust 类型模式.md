@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Languages
+  - page
 ---
-
 # Rust 类型层面模式
 
 > 参考来源：[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)、[The Rust Programming Language Book](https://doc.rust-lang.org/book/)、[Rust Patterns Book](https://rust-unofficial.github.io/patterns/)

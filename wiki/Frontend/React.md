@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Frontend
+  - page
 ---
-
 # React 最佳实践
 
 > 来源：[React.dev 官方文档](https://react.dev/learn)、[React Thinking in React](https://react.dev/learn/thinking-in-react)

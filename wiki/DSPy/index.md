@@ -3,6 +3,7 @@ type: index
 topic: DSPy
 updated: 2026-06-02
 tags:
+  - wiki
   - DSPy
   - index
 ---

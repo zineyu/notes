@@ -1,8 +1,9 @@
 ---
 tags:
+  - wiki
   - Languages
+  - page
 ---
-
 # Rust 系统与生产环境
 
 > 参考来源：[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)、[The Rustonomicon](https://doc.rust-lang.org/nomicon/)、[thiserror](https://docs.rs/thiserror/)、[anyhow](https://docs.rs/anyhow/)、tokio 文档

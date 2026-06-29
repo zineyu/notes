@@ -1,9 +1,9 @@
 ---
 tags:
+  - wiki
   - Languages
   - index
 ---
-
 # 编程语言
 
 > 主力语言 Rust，Go 作为补充
