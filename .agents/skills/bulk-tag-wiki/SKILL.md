@@ -11,6 +11,9 @@ tags: [skill, wiki, maintenance]
 
 批量为 LLM Wiki / Obsidian garden 的 Markdown 文件增加或修正 frontmatter `tags`。
 
+> Tags are keywords or topics that help you quickly find the notes you want.
+
+
 ## Default behavior
 
 给 wiki 文件加 tag 是 wiki 维护的**默认步骤**。每个 wiki 页面都必须带有 `tags` frontmatter，且 tag 不应只局限于主题目录名。
