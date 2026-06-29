@@ -20,6 +20,12 @@ tags:
 - 保留基础三层 tag 与已有自定义 tag
 - 更新: [[wiki/log.md]]、[[.agents/skills/bulk-tag-wiki/SKILL.md]] 及 34 个主题页面
 
+## [2026-06-29] maintenance | 将批量加 tag 脚本沉淀进 skill
+- 把实际使用的 Python 脚本抽象为通用版本，写入 `.agents/skills/bulk-tag-wiki/SKILL.md`
+- 脚本支持基础 tag、来源类型 tag、内容关键词 tag、保留已有自定义 tag
+- 验证脚本对当前 wiki 幂等（无文件变更）
+- 更新: [[.agents/skills/bulk-tag-wiki/SKILL.md]]、[[wiki/log.md]]
+
 ## [2026-06-24] process-inbox | Rust 可观测性与 Agent 编排模式
 - 新建: [[Languages/Rust 可观测性]]、[[Agent/Sub-agent 与工具型 Agent]]
 - 更新: [[Languages/Rust]]、[[Languages/Rust 系统级生产环境]]、[[Languages/index]]、[[DevOps/运维与 SRE]]、[[Agent/Harness Engineering]]、[[Agent/index]]、[[wiki/index.md]]
