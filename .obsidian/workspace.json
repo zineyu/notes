@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "02ce1360fe6fa677",
+        "id": "3a8435c3a6177415",
         "type": "tabs",
         "children": [
           {
-            "id": "2bb897aa3e1d6e7e",
+            "id": "9716e1ee364f512f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -188,13 +188,21 @@
       "bases:新建数据库": false
     }
   },
-  "active": "2bb897aa3e1d6e7e",
+  "active": "9716e1ee364f512f",
   "lastOpenFiles": [
+    "wiki/index.md",
     "AGENTS.md",
-    "wiki/Languages/Rust.md",
-    "wiki/Agent/Skill 设计.md",
     "raw/Articles/Where to use sub-agents versus agents as tools.md",
     "raw/Articles/Rust 可观测性实战：别再 println 了.md",
+    "raw/Articles/Nix Home Manager 最佳实践.md",
+    "raw/Articles/dspy_miprov2_analysis.md",
+    "raw/Articles/dspy_gepa_analysis.md",
+    "raw/Articles/dspy_bootstrap_fewshot_analysis.md",
+    "raw/Articles/我是怎么用Codex嗨大了的？.md",
+    "raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf",
+    "猿禹宙.md",
+    "wiki/Languages/Rust.md",
+    "wiki/Agent/Skill 设计.md",
     "wiki/Agent/index.md",
     "wiki/Agent/Harness Engineering.md",
     "wiki/Agent/AI 编码工作流.md",
@@ -210,14 +218,6 @@
     "wiki/DSPy/MIPROv2.md",
     "wiki/DSPy/BootstrapFewShot.md",
     "wiki/DSPy/GEPA.md",
-    "inbox/dspy_miprov2_analysis.md",
-    "inbox/dspy_bootstrap_fewshot_analysis.md",
-    "inbox/dspy_gepa_analysis.md",
-    "inbox/TongMengHuiAI 会话历史面板需求交接.md",
-    "wiki/Agent/Trellis.md",
-    "raw/Articles/从VibeCoding到HarnessEngineering再到Trellis落地.pdf",
-    "wiki/Agent/SKILL 设计指南.md",
-    "raw/Articles/我是怎么用Codex嗨大了的？.md",
     "Templates/WebClipper - Inbox Source.json",
     "Templates",
     "inbox",
